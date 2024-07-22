@@ -1,0 +1,6 @@
+{
+  "appTitle": "workout_management_class",
+  "@appTitle": {
+    "description": "The title of the application"
+  }
+}
