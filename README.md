@@ -1,4 +1,4 @@
-# workout_management_class
+# Workout Management Class (Mobile Apps)
 
 A new Flutter project.
 
