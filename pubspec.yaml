@@ -29,6 +29,8 @@ dependencies:
   url_launcher: ^6.0.9
   platform: ^3.1.0
   flutter_launcher_icons: ^0.13.1
+  lite_rolling_switch: ^1.0.1
+  flutter_dotenv: ^5.1.0
 
 dev_dependencies:
   flutter_test:
@@ -45,3 +47,4 @@ flutter:
   assets:
     # Add assets from the images directory to the application.
     - assets/images/
+    - .env

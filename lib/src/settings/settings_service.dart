@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+part of 'settings.dart';
 
 /// A service that stores and retrieves user settings.
 ///

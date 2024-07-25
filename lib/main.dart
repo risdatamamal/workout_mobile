@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-
-import 'src/app.dart';
-import 'src/settings/settings_controller.dart';
-import 'src/settings/settings_service.dart';
+import 'package:workout_management_class/src/settings/settings.dart';
+import 'package:workout_management_class/src/services/services.dart';
+import 'package:workout_management_class/src/app.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
   final settingsController = SettingsController(SettingsService());
   await settingsController.loadSettings();
+  await dotenv.load(fileName: ".env");
+  // print(baseURL);
 
   runApp(MyApp(settingsController: settingsController));
 }

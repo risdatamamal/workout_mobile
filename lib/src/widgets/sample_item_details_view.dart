@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+part of 'widgets.dart';
 
 /// Displays detailed information about a SampleItem.
 class SampleItemDetailsView extends StatelessWidget {
