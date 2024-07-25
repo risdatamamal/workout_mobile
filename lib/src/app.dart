@@ -45,8 +45,6 @@ class MyApp extends StatelessWidget {
                   // case SampleItemListView.routeName:
                   default:
                     return SplashPage(
-                        title: 'Test',
-                        subtitle: 'Test',
                         icon: 'assets/images/logo.png',
                         subImage: 'assets/images/splash-logo-1.png',
                         buttonTitle1: 'GET STARTED',

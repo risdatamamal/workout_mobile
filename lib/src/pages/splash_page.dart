@@ -1,8 +1,6 @@
 part of 'pages.dart';
 
 class SplashPage extends StatelessWidget {
-  final String title;
-  final String subtitle;
   final String icon;
   final String subImage;
   final String buttonTitle1;
@@ -12,8 +10,6 @@ class SplashPage extends StatelessWidget {
 
   const SplashPage({
     super.key,
-    required this.title,
-    required this.subtitle,
     required this.icon,
     required this.subImage,
     required this.buttonTitle1,
