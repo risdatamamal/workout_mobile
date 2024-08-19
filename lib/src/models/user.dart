@@ -6,7 +6,6 @@ class User extends Equatable {
   final String? email;
   final String? phoneNumber;
   final String? photoURL;
-  final List<String>? roles;
   static String? token;
   final int? isActive;
 
@@ -16,7 +15,6 @@ class User extends Equatable {
     this.email,
     this.phoneNumber,
     this.photoURL,
-    this.roles,
     this.isActive,
   });
 
@@ -26,7 +24,6 @@ class User extends Equatable {
         email: data['email'],
         phoneNumber: data['phone_number'],
         photoURL: data['photo_url'],
-        roles: data['roles'],
         isActive: data['is_active'],
       );
 
@@ -37,8 +34,7 @@ class User extends Equatable {
         email ?? '',
         phoneNumber ?? '',
         photoURL ?? '',
-        roles ?? [],
-        isActive ?? 0,
+        isActive ?? 1,
       ];
 
   User copyWith({
@@ -56,18 +52,18 @@ class User extends Equatable {
         email: email ?? this.email,
         phoneNumber: phoneNumber ?? this.phoneNumber,
         photoURL: photoURL ?? this.photoURL,
-        roles: roles ?? this.roles,
         isActive: isActive ?? this.isActive,
       );
 
-  User mockUser = User(
-    id: 1,
-    name: 'John Doe',
-    email: 'johndoe@gmail.com',
-    phoneNumber: '081234567890',
-    photoURL: 'assets/images/photo.png',
-    roles: ['Customer'],
-    isActive: 1,
-  );
+  // Static data
+  // User mockUser = User(
+  //   id: 1,
+  //   name: 'John Doe',
+  //   email: 'johndoe@gmail.com',
+  //   phoneNumber: '081234567890',
+  //   photoURL: 'assets/images/photo.png',
+  //   roles: ['Customer'],
+  //   isActive: 1,
+  // );
 
 }

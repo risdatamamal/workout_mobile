@@ -5,6 +5,8 @@ import 'dart:math';
 // import 'package:workout_management_class/src/cubit/cubit.dart';
 // import 'package:workout_management_class/src/models/models.dart';
 import 'package:flutter/services.dart';
+import 'package:workout_management_class/src/cubit/cubit.dart';
+import 'package:workout_management_class/src/models/models.dart';
 import 'package:workout_management_class/src/shared/shared.dart';
 import 'package:workout_management_class/src/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -33,6 +35,8 @@ part 'trainer/login_page.dart';
 part 'trainer/forgot_password_page.dart';
 
 // Customer Page
+part 'customer/main_page.dart';
 part 'customer/login_page.dart';
 part 'customer/register_page.dart';
+part 'customer/register_success.dart';
 part 'customer/forgot_password_page.dart';

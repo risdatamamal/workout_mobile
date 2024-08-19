@@ -22,6 +22,14 @@ class UserLoaded extends UserState {
   List<Object> get props => [user];
 }
 
+class UserLoadedLogout extends UserState {
+  final String value;
+  const UserLoadedLogout(this.value);
+
+  @override
+  List<Object> get props => [value];
+}
+
 class UserLoadingFailed extends UserState {
   final String message;
   const UserLoadingFailed(this.message);

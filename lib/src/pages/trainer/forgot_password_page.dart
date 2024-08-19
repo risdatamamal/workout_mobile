@@ -12,11 +12,11 @@ class _TrainerForgotPasswordPageState extends State<TrainerForgotPasswordPage> {
   Widget build(BuildContext context) {
     return GeneralPage(
       onBackButtonPressed: () {
-        // Get.back();
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => CustomerLoginPage()),
-        );
+        Navigator.pop(context);
+        // Navigator.push(
+        //   context,
+        //   MaterialPageRoute(builder: (context) => CustomerLoginPage()),
+        // );
       },
       title: 'Forgot Password',
       subtitle: 'Reset password if your forgot it!',

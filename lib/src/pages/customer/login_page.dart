@@ -1,6 +1,9 @@
 part of '../pages.dart';
 
 class CustomerLoginPage extends StatefulWidget {
+  const CustomerLoginPage({Key? key}) : super(key: key);
+  static const routeName = '/customer/login';
+
   @override
   State<CustomerLoginPage> createState() => _CustomerLoginPageState();
 }
@@ -30,22 +33,13 @@ class _CustomerLoginPageState extends State<CustomerLoginPage> {
           });
         },
         onDoubleTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const TrainerLoginPage()),
-          );
+          Get.to(() => const TrainerLoginPage());
         },
         onSwipe: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const TrainerLoginPage()),
-          );
+          Get.to(() => const TrainerLoginPage());
         },
         onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const TrainerLoginPage()),
-          );
+          Get.to(() => const TrainerLoginPage());
         },
       ),
       child: Column(
@@ -191,11 +185,7 @@ class _CustomerLoginPageState extends State<CustomerLoginPage> {
                   )
                 : ElevatedButton(
                     onPressed: () {
-                      // Get.to(() => ForgotPasswordPage());
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => CustomerForgotPasswordPage()),
-                      );
+                      Get.to(() => CustomerForgotPasswordPage());
                     },
                     style: ElevatedButton.styleFrom(
                         elevation: 0,
@@ -221,11 +211,7 @@ class _CustomerLoginPageState extends State<CustomerLoginPage> {
                   )
                 : ElevatedButton(
                     onPressed: () {
-                      // Get.to(() => CustomerRegisterPage());
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => CustomerRegisterPage()),
-                      );
+                      Get.to(() => const CustomerRegisterPage());
                     },
                     style: ElevatedButton.styleFrom(
                         elevation: 0,

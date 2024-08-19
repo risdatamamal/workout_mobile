@@ -24,7 +24,7 @@ class SplashPage extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            width: 150,
+            width: 250,
             height: 150,
             margin: const EdgeInsets.only(bottom: 150),
             decoration: BoxDecoration(
